@@ -17,6 +17,7 @@ class CategoryFactory extends Factory
      */
     public function definition()
     {
+        // Factory con el contenido de category
         return [
             'name' => fake()->word(),
             'description' => fake()->realText()
