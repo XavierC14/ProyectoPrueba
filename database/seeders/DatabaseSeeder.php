@@ -20,10 +20,11 @@ class DatabaseSeeder extends Seeder
     {
         // Seeder que utiliza la factory User
         User::factory(100)->create();
-        // Seeder que utiliza la factory Product
-        Product::factory(100)->create();
         // Seeder que utiliza la factory Category
         category::factory(100)->create();
+        // Seeder que utiliza la factory Product
+        Product::factory(100)->create();
+  
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
