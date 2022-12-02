@@ -17,12 +17,13 @@ class ProductFactory extends Factory
      */
     public function definition()
     {
+        // Factory con el contenido del product.
         return [
             'name' => fake()->word(),
             'stock' => rand(1,9999),
             'price' => rand(1,50),
             'description' => fake()->realText(),
-            'category' => fake()->realText()
+            'category' => fake()->word()
         ];
     }
 }
